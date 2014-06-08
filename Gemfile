@@ -26,6 +26,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'thin'
   gem 'coveralls', require: false
+  gem 'ffaker', '~> 1', require: false
+
 end
 group :production do
   gem 'unicorn'
@@ -34,7 +36,6 @@ group :test do
   gem 'simplecov', '~> 0.7.1'
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'faker'
   gem 'launchy'
   gem 'selenium-webdriver'
 end

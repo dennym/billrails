@@ -28,6 +28,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'thin'
   gem "spring-commands-rspec"
+  gem 'coveralls', require: false
 end
 group :production do
   gem 'unicorn'

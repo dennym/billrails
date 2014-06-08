@@ -5,16 +5,16 @@ AllCops:
     - app/views/**/*.rabl
   Exclude:
     - db/**/*
-    - doc/**
+    - doc/**/*
     - config/**/*
-    - script/**
+    - script/**/*
     - bin/*
     - Rakefile
     - config.ru
-    - vendor/*
+    - vendor/*/*
     - sh/*
-    - gems/**
-    - gems/*/vendor/**
+    - gems/**/*
+    - gems/*/vendor/**/*
 
 AccessorMethodName:
   Enabled: false

@@ -8,11 +8,11 @@ AllCops:
     - doc/**/*
     - config/**/*
     - script/**/*
-    - bin/*
+    - bin/**/*
     - Rakefile
     - config.ru
-    - vendor/*/*
-    - sh/*
+    - vendor/**/*
+    - sh/**/*
     - gems/**/*
     - gems/*/vendor/**/*
 

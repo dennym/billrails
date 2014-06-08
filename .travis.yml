@@ -1,0 +1,19 @@
+rvm:
+  - '2.0.0'
+  - '2.1.0'
+  - '2.1.1'
+cache:
+  bundler: true
+services:
+  - redis-server
+addons:
+  postgresql: 9.3
+before_install:
+  - gem install bundler -v=1.5.1
+before_script:
+  - cp config/samples/* config/
+  - psql -c 'CREATE DATABASE um_test;' -U postgres
+  - bundle exec rake db:test:prepare
+script:
+  - bundle exec rspec
+  - bundle exec rubocop --rails

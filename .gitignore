@@ -77,3 +77,21 @@ pickle-email-*.html
 # Environment files that may contain sensitive data
 .env
 .powenv
+
+.bundle
+.DS_Store
+.yardoc
+.env
+coverage
+doc
+log
+tmp
+config/*.yml
+*.dev
+*.swp
+*.rdb
+vendor/bin
+vendor/ruby
+vendor/cache
+vendor/bundler
+tags

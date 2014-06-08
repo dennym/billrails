@@ -1,0 +1,26 @@
+development:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: billrails_development
+  pool:     5
+  username: postgres
+  template: template0
+
+test:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: billrails_test
+  pool:     5
+  username: postgres
+  template: template0
+
+production:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: billrails_production
+  pool:     5
+  username: postgres
+  template: template0

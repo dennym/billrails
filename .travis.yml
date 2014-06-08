@@ -7,10 +7,10 @@ services:
 addons:
   postgresql: 9.3
 before_install:
-  - gem install bundler -v=1.5.1
+  - gem install bundler -v=1.6.2
 before_script:
-  # - cp config/samples/* config/
-  - psql -c 'CREATE DATABASE um_test;' -U postgres
+  - cp config/samples/* config/
+  - psql -c 'CREATE DATABASE billrails_test;' -U postgres
   - bundle exec rake db:test:prepare
 script:
   - bundle exec rspec

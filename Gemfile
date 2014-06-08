@@ -18,19 +18,22 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
-  gem 'rails_layout'
+  gem 'rubocop'
 end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'pry-rails'
-  gem 'pry-rescue'
+  gem 'pry-debugger'
+  gem 'rspec'
   gem 'rspec-rails'
   gem 'thin'
+  gem "spring-commands-rspec"
 end
 group :production do
   gem 'unicorn'
 end
 group :test do
+  gem 'simplecov', '~> 0.7.1'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'faker'

@@ -20,7 +20,7 @@ describe UsersController do
   end
 
   describe 'GET show' do
-    it "has a 200 status code" do
+    it 'has a 200 status code' do
       get :show, id: @user.id
       expect(response.status).to eq(200)
     end

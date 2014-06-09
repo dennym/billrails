@@ -18,4 +18,16 @@ describe UsersController do
       expect(response.status).to eq(200)
     end
   end
+
+  describe 'GET show' do
+    it "has a 200 status code" do
+      get :show, id: @user.id
+      expect(response.status).to eq(200)
+    end
+
+    it 'assigns users as @user' do
+      get :show, id: @user.id
+      expect(assigns(:user)).to eq(@user)
+    end
+  end
 end

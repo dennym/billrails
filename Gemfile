@@ -13,6 +13,8 @@ gem 'pg'
 gem 'sendgrid'
 gem 'simple_form'
 group :development do
+  gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'

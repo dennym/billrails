@@ -11,6 +11,8 @@ gem 'devise'
 gem 'pg'
 gem 'sendgrid'
 gem 'simple_form'
+gem 'activeadmin', github: 'gregbell/active_admin'
+
 group :development do
   gem 'spring'
   gem 'spring-commands-rspec'
@@ -19,6 +21,7 @@ group :development do
   gem 'quiet_assets'
   gem 'rubocop'
 end
+
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'pry-rails'
@@ -27,11 +30,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'thin'
   gem 'ffaker', '~> 1', require: false
-
 end
+
 group :production do
   gem 'unicorn'
 end
+
 group :test do
   gem 'simplecov', '~> 0.7.1'
   gem 'coveralls', require: false

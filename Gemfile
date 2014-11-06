@@ -20,6 +20,7 @@ group :development do
   gem 'binding_of_caller', :platforms=>[:mri_21]
   gem 'quiet_assets'
   gem 'rubocop'
+  gem 'bullet'
 end
 
 group :development, :test do
